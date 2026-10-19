@@ -1,0 +1,16 @@
+software-dev-flow
+
+Copyright (c) 2026 jsy96
+
+This project is licensed under GPL-3.0-or-later.
+When copying, modifying, or distributing this project or derivative versions,
+keep this notice and the license statement.
+
+Derivation notice:
+This skill derives from project-flow-cy
+(https://github.com/CY-CHENYUE/project-flow-cy), Copyright (c) 2026 CY-CHENYUE,
+licensed under GPL-3.0-or-later. The file-based multi-agent collaboration
+architecture (flow/ control layer, docs/ content layer, AGENTS.md/CLAUDE.md
+runtime contract, append-style progress log, non-destructive merge, stop-hook
+continuation mechanics) is adapted from that project; software-engineering
+additions (quality gates, contract-first, releases) are original to this skill.
