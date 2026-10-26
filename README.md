@@ -4,10 +4,27 @@
 
 ## 更新记录（最新在前）
 
+- **2026-10-27**：新增 `edge-tts-chinese` v1.0.0（免费中文文字转语音，默认 Yunjian 男声，支持 MP3 和句级 SRT；源码目录 + `dist/edge-tts-chinese.zip`）。
 - **2026-10-19**：新增 `software-dev-flow` v1.0.261019-1（软件开发协作流程 skill，源码目录 + `dist/software-dev-flow.zip`）。派生自 CY-CHENYUE/project-flow-cy（GPL-3.0-or-later）。
 - **2026-10-12**：新增 `self-media-reuse-workflow`。
 
 ## Skills
+
+### edge-tts-chinese
+
+使用 Edge 的在线朗读服务生成中文 MP3，可同时输出句级 SRT 字幕。默认 Yunjian（云健）男声、语速 `-10%`，支持 Xiaoxiao、Yunxi 或完整 Voice ID，以及 UTF-8 文本文件输入、语速、音量和音高调整。
+
+安装方式：
+
+1. 下载 [dist/edge-tts-chinese.zip](dist/edge-tts-chinese.zip)，解压到 `~/.codex/skills/`（ZIP 已含顶层 `edge-tts-chinese/`）。Claude Code 可解压到 `~/.claude/skills/`。
+2. 准备 Python 3.9 或更新版本，运行 `python3 ~/.codex/skills/edge-tts-chinese/scripts/tts.py --setup`，在技能自己的 `.venv/` 安装依赖。
+3. 新开会话后使用 `$edge-tts-chinese`，或直接运行脚本。详细参数见 [SKILL.md](edge-tts-chinese/SKILL.md)。
+
+```text
+用 edge-tts-chinese 把这段中文生成 Yunjian 男声 MP3，语速 -10%，同时输出 SRT 字幕。
+```
+
+需要联网，无需 API Key。使用第三方 `edge-tts` 客户端，不是 Azure 正式 API，也不提供离线合成、声音克隆或商用授权承诺。失败会停止并报告，不反复重试。
 
 ### self-media-reuse-workflow
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文文字转语音"
+  short_description: "免费中文文字转语音，默认云健男声，支持文本文件、切换音色及同步字幕"
+  default_prompt: "用 $edge-tts-chinese 将这段中文转成 Yunjian 男声 MP3，语速 -10%，并生成同步 SRT 字幕。"
